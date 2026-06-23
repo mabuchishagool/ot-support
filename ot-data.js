@@ -1,6 +1,6 @@
 const otItems = [
-// ===== 発達障害（ASD） =====
-{id:1,name:"自閉スペクトラム症（ASD）",en:"Autism Spectrum Disorder",cat:"発達障害（ASD）",age:"幼児〜学童",
+// ===== 発達障害 =====
+{id:1,name:"自閉スペクトラム症（ASD）",en:"Autism Spectrum Disorder",cat:"発達障害",age:"幼児〜学童",
 overview:"社会的コミュニケーションの困難と限定された反復的な行動・興味を主症状とする神経発達症。感覚処理の偏り・不器用さ・こだわり行動を伴うことが多く、OTは感覚統合・ADL・社会参加を包括的に支援する。",
 observations:[
 {name:"感覚過敏・感覚鈍麻の評価",priority:"high",
@@ -13,10 +13,17 @@ normal:"タスク分析で各工程を細分化し、視覚的手順表・補助
 why:"ASDの約50%にDCDを合併する。書字・はさみ・箸など微細運動の困難が学校参加を制限することがある。運動評価（MABC-2等）で協調運動のレベルを把握する。",
 normal:"段階的な課題設定と成功体験の積み重ね・適切な道具の選定で参加を支援する",warn:""},
 {name:"対人関係・遊び場面の観察",priority:"mid",
-why:"自由遊び・構造化遊び場面でのアイコンタクト・共同注意・模倣の質を観察する。遊びの形態（一人遊び→並行遊び→協力遊び）の発達段階を把握し、段階に応じた関わりを計画する。",
+why:"自由遊び・構造化遊び場面でのアイコンタクト・共同注意・模倣の質を観察する。遊びの形態の発達段階を把握し、段階に応じた関わりを計画する。",
 normal:"興味のある活動を媒介として共同注意・順番交代・模倣を促進する",warn:"遊び場面でのみ確認できる感覚探求行動・反復常同行動が激しい→感覚統合の視点でアプローチを検討"},
+],
+refs:[
+"American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5). 2013.",
+"Bodison SC & Parham LD (2018). Specific sensory techniques and sensory environmental modifications for children and youth with sensory integration difficulties. Am J Occup Ther, 72(1).",
+"Schaaf RC & Mailloux Z (2015). Clinician's Guide for Implementing Ayres Sensory Integration. AOTA Press.",
+"日本作業療法士協会（2020）『自閉スペクトラム症のある子どもへの作業療法支援の手引き』",
+"岩崎清隆（編）（2019）『感覚統合療法の理論と実践』協同医書出版社.",
 ]},
-{id:2,name:"感覚過敏（ASD・SPD）",en:"Sensory Hypersensitivity",cat:"発達障害（ASD）",age:"幼児〜学童",
+{id:2,name:"感覚過敏（ASD・SPD）",en:"Sensory Hypersensitivity",cat:"発達障害",age:"幼児〜学童",
 overview:"触覚・音・光・匂い・衣服等への過敏反応が日常生活を制限する状態。ASD・SPDで多く見られ、OTは感覚統合療法・環境調整・感覚ダイエット（sensory diet）で対応する。",
 observations:[
 {name:"触覚過敏の程度と部位",priority:"high",
@@ -26,10 +33,16 @@ normal:"深圧刺激（固有受容覚）の活用・素材選択の工夫・脱
 why:"音過敏は学校での集団生活（チャイム・給食時の食器音・体育館の反響）を困難にする。光過敏は蛍光灯・太陽光への不快感を引き起こし、学習集中に影響する。",
 normal:"イヤーマフ・サングラス等補装具の導入・座席配置の工夫・環境音の調整で参加しやすい環境を整える",warn:"感覚刺激で登校困難・給食不参加→学校支援担当と連携し合理的配慮を検討"},
 {name:"口腔感覚過敏（偏食）",priority:"mid",
-why:"口腔内の触覚・温度・食感への過敏が偏食の主要因になることがある。味よりも食感（ぐにゃっとした・混ざった食感等）への拒否反応が多い。栄養面のリスクを把握する。",
+why:"口腔内の触覚・温度・食感への過敏が偏食の主要因になることがある。味よりも食感（ぐにゃっとした・混ざった食感等）への拒否反応が多い。",
 normal:"口腔感覚脱感作プログラム・食べられるものから少しずつ食感を広げる段階的アプローチ・栄養士との連携",warn:"著しい偏食で成長障害・栄養不足→医師・栄養士への紹介"},
+],
+refs:[
+"Dunn W (2014). Sensory Profile 2. Pearson.",
+"Miller LJ et al. (2007). Concept evolution in sensory integration: A proposed nosology for diagnosis. Am J Occup Ther, 61(2), 135-140.",
+"Pfeiffer B et al. (2011). Effectiveness of sensory integration interventions in children with autism spectrum disorders. Am J Occup Ther, 65(1).",
+"日本感覚統合学会（監修）（2019）『感覚統合Q&A 改訂第2版』協同医書出版社.",
 ]},
-{id:3,name:"こだわり行動・常同行動",en:"Restricted/Repetitive Behaviors",cat:"発達障害（ASD）",age:"幼児〜学童",
+{id:3,name:"こだわり行動・常同行動",en:"Restricted/Repetitive Behaviors",cat:"発達障害",age:"幼児〜学童",
 overview:"特定の手順・順序への固執・反復的な動作（手をひらひらさせる・物を並べる等）がASDに見られる。こだわりが強すぎると活動参加・切り替えを著しく阻害する。OTは感覚統合的視点と環境調整でアプローチする。",
 observations:[
 {name:"常同行動の機能分析",priority:"high",
@@ -41,10 +54,14 @@ normal:"視覚的タイムスケジュール・タイマー（残り時間の可
 {name:"こだわりの日常生活・学校生活への影響",priority:"mid",
 why:"食事の食べ方の順序・登校ルートの固執・特定の衣服への執着などが日常生活を制限することがある。こだわりの内容と程度・本人と周囲への影響を評価する。",
 normal:"こだわりの一部を活用した動機づけ・段階的な柔軟性を育てる活動計画で対応する",warn:""},
+],
+refs:[
+"American Psychiatric Association. DSM-5. 2013.",
+"Mesibov GB & Shea V (2010). The TEACCH program in the era of evidence-based practice. J Autism Dev Disord, 40(5), 570-579.",
+"Zwaigenbaum L et al. (2015). Early intervention for children with autism spectrum disorder. Pediatrics, 136(Suppl 1).",
+"奥田健次（2012）『発達障害の子への応用行動分析（ABA）入門』中央法規出版.",
 ]},
-
-// ===== 発達障害（ADHD） =====
-{id:4,name:"注意欠如多動症（ADHD）",en:"Attention-Deficit/Hyperactivity Disorder",cat:"発達障害（ADHD）",age:"幼児〜学童",
+{id:4,name:"注意欠如多動症（ADHD）",en:"Attention-Deficit/Hyperactivity Disorder",cat:"発達障害",age:"幼児〜学童",
 overview:"不注意・多動性・衝動性を主症状とする神経発達症。OTは実行機能・ワーキングメモリ・時間管理・整理整頓などの支援を通じて学校生活・家庭生活への参加を高める。",
 observations:[
 {name:"着席保持・注意持続の評価",priority:"high",
@@ -59,10 +76,15 @@ normal:"定位置を視覚化（写真・ラベル）・カバンの中の仕分
 {name:"衝動性・感情コントロール",priority:"mid",
 why:"衝動性により友達とのトラブル・授業中の発言・危険行動が起きやすい。感情の調整困難はADHDで高頻度に見られ、QOLに大きく影響する。",
 normal:"感情体温計ツールの活用・感情コントロールのソーシャルスキルトレーニング・セルフモニタリング支援",warn:"衝動的な自傷・激しい感情爆発が繰り返される→医師・心理士との連携"},
+],
+refs:[
+"American Psychiatric Association. DSM-5. 2013.",
+"Barkley RA (2015). Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment, 4th ed. Guilford Press.",
+"Pfeiffer B et al. (2014). Sensory processing and sensory integration in ADHD. Phys Occup Ther Pediatr, 35(3).",
+"齊藤万比古（編）（2016）『注意欠如・多動症（AD/HD）の診断・治療ガイドライン 第4版』じほう.",
+"日本作業療法士協会（2020）『発達障害のある人の作業療法支援』",
 ]},
-
-// ===== 発達性協調運動症 =====
-{id:5,name:"発達性協調運動症（DCD）",en:"Developmental Coordination Disorder",cat:"発達性協調運動症（DCD）",age:"幼児〜学童",
+{id:5,name:"発達性協調運動症（DCD）",en:"Developmental Coordination Disorder",cat:"発達障害",age:"幼児〜学童",
 overview:"運動協調の困難が日常生活・学習・遊びに影響を与える神経発達症。不器用さ・転びやすさ・書字困難・ボール操作困難が代表的。OTは微細・粗大運動の支援と環境調整で参加を促進する。",
 observations:[
 {name:"協調運動の包括的評価（MABC-2等）",priority:"high",
@@ -73,14 +95,19 @@ why:"書字はDCDで最も多く困難になる活動の一つ。筆圧の調整
 normal:"鉛筆グリップ・罫線の拡大・姿勢サポート・ICT活用（キーボード・タブレット）の段階的導入で書くことへの参加を維持する",warn:"書字困難で授業についていけず自己肯定感が著しく低下→学校との合理的配慮の検討が急務"},
 {name:"自転車・縄跳び等の粗大運動",priority:"mid",
 why:"バランス・両側協調・リズムを要する活動（自転車・縄跳び・鉄棒等）が苦手で同年代と比べ習得が遅れる。仲間外れや自己効力感の低下につながることがある。",
-normal:"活動を細分化し段階的に練習・補助具の活用・タスク志向アプローチ（何のために練習するかを明確に）で動機を維持する",warn:""},
+normal:"活動を細分化し段階的に練習・補助具の活用・タスク志向アプローチで動機を維持する",warn:""},
 {name:"ADLへの影響（ボタン・靴ひも等）",priority:"mid",
 why:"ボタン・ファスナー・靴ひも結びなどの手指操作を要するADLが自立しにくい。着替えに時間がかかりすぎることが登校準備・学校生活に支障をきたすことがある。",
 normal:"適切な難易度の衣服選択（マジックテープ・ゆとりのある素材）・段階的な練習・成功体験の積み重ね",warn:""},
+],
+refs:[
+"Blank R et al. (2019). European Academy of Childhood Disability (EACD): Recommendations on the definition, diagnosis and intervention of developmental coordination disorder. Dev Med Child Neurol, 61(3).",
+"Henderson SE, Sugden DA & Barnett AL (2007). Movement Assessment Battery for Children-2 (MABC-2). Pearson.",
+"Polatajko HJ & Mandich A (2004). Enabling Occupation in Children: The Cognitive Orientation to daily Occupational Performance (CO-OP) Approach. CAOT.",
+"辻井正次・宮原資英（監修）（2019）『発達性協調運動障害（DCD）』金子書房.",
+"Missiuna C et al. (2008). Partnering for change: An innovative school-based occupational therapy service delivery model. Can J Occup Ther, 75(2).",
 ]},
-
-// ===== 学習障害 =====
-{id:6,name:"書字障害（発達性ディスレクシア等）",en:"Dysgraphia / Written Language Disorder",cat:"学習障害（LD）",age:"学齢期",
+{id:6,name:"書字障害（発達性ディスレクシア等）",en:"Dysgraphia / Written Language Disorder",cat:"発達障害",age:"学齢期",
 overview:"読み書きの習得に著しい困難を示す学習障害。OTは書字に関わる微細運動・視知覚・視覚-運動統合の評価・支援を担い、ICT活用等の合理的配慮の推進も重要な役割となる。",
 observations:[
 {name:"視覚-運動統合の評価（VMI等）",priority:"high",
@@ -92,10 +119,15 @@ normal:"適切な鉛筆グリップ・姿勢調整（足台・クッション）
 {name:"ICT活用の評価・導入支援",priority:"mid",
 why:"書字困難が著しい場合、キーボード・タブレット・音声入力の活用が学習参加を大きく改善する。本人のICT操作スキルと学校でのICT環境を評価し、段階的に導入する。",
 normal:"タイピング練習・タブレットアプリの活用で書くことの代替手段を確立し、学習内容そのものへの集中を可能にする",warn:""},
+],
+refs:[
+"Beery KE & Beery NA (2010). The Beery-Buktenica Developmental Test of Visual-Motor Integration, 6th ed. Pearson.",
+"Feder KP & Majnemer A (2007). Handwriting development, competency, and intervention. Dev Med Child Neurol, 49(4), 312-317.",
+"Case-Smith J (2002). Effectiveness of school-based occupational therapy intervention on handwriting. Am J Occup Ther, 56(1).",
+"奥村智人・若宮英司（編）（2021）『学習に困難のある子どもへの作業療法的アプローチ』三輪書店.",
+"文部科学省（2021）『障害のある子供の教育支援の手引』",
 ]},
-
-// ===== 知的発達症 =====
-{id:7,name:"知的発達症（知的障害）",en:"Intellectual Developmental Disorder",cat:"知的発達症",age:"幼児〜学童",
+{id:7,name:"知的発達症（知的障害）",en:"Intellectual Developmental Disorder",cat:"発達障害",age:"幼児〜学童",
 overview:"知的機能と適応行動の両方に有意な制約がある状態。OTは認知特性に合わせたADL・余暇・社会参加支援を行い、できることを最大限に活かした自立生活を支援する。",
 observations:[
 {name:"適応行動の評価（VABS等）",priority:"high",
@@ -107,10 +139,17 @@ normal:"タスク分析・視覚的手順書・一貫した教え方（プロン
 {name:"認知特性（視覚優位か言語優位か）の把握",priority:"mid",
 why:"視覚的情報処理が強い場合、写真・絵カード・動画による指導が言語説明より効果的。認知特性に合わせた指導法の選択が学習効率を大きく左右する。",
 normal:"本人の認知特性（視覚・言語・動作）に合わせた指導媒体を選択し、理解しやすい形で教える",warn:""},
+],
+refs:[
+"Sparrow SS, Cicchetti DV & Saulnier CA (2016). Vineland Adaptive Behavior Scales, Third Edition (VABS-3). Pearson.",
+"American Association on Intellectual and Developmental Disabilities (AAIDD). Intellectual Disability: Definition, Classification, and Systems of Supports, 12th ed. 2021.",
+"Snell ME & Brown F (2011). Instruction of Students with Severe Disabilities, 7th ed. Pearson.",
+"日本知的障害者福祉協会（2019）『知的障害のある人の支援ガイドライン』",
+"厚生労働省（2017）『障害者の日常生活及び社会生活を総合的に支援するための法律（障害者総合支援法）』",
 ]},
 
-// ===== 神経疾患 =====
-{id:8,name:"脳性麻痺（痙直型）",en:"Spastic Cerebral Palsy",cat:"神経疾患",age:"乳幼児〜学童",
+// ===== 神経・先天性疾患 =====
+{id:8,name:"脳性麻痺（痙直型）",en:"Spastic Cerebral Palsy",cat:"神経・先天性疾患",age:"乳幼児〜学童",
 overview:"痙縮による運動制限・姿勢異常が主症状。上肢機能障害・姿勢保持困難・ADL制限が多くみられる。OTは上肢機能の最大化・ADL自立支援・補装具・環境調整を担う。",
 observations:[
 {name:"上肢機能（筋緊張・関節可動域・随意性）の評価",priority:"high",
@@ -125,8 +164,15 @@ normal:"自助具の導入・適切な姿勢設定・食器の工夫（滑り止
 {name:"ADL・補装具・環境調整",priority:"mid",
 why:"更衣・排泄・入浴等のADLは機能レベルに応じた目標設定と補装具・環境調整の組み合わせが重要。できることとできないことを正確に評価し、自立と安全を両立させる。",
 normal:"セルフケア補装具（着替えの工夫・手すり等）の選定・バリアフリー環境の提案で安全なADL遂行を支援する",warn:""},
+],
+refs:[
+"Eliasson AC et al. (2006). The Manual Ability Classification System (MACS) for children with cerebral palsy. Dev Med Child Neurol, 48(7), 549-554.",
+"Palisano R et al. (1997). Development and reliability of a system to classify gross motor function in children with cerebral palsy. Dev Med Child Neurol, 39(4), 214-223.",
+"Sakzewski L et al. (2014). Efficacy of upper limb therapies for unilateral cerebral palsy. Pediatrics, 133(1).",
+"才藤栄一・植松光俊（編）（2020）『脳性麻痺リハビリテーションガイドライン 第2版』医歯薬出版.",
+"日本作業療法士協会（2018）『脳性麻痺に対する作業療法支援の手引き』",
 ]},
-{id:9,name:"二分脊椎",en:"Spina Bifida",cat:"神経疾患",age:"乳幼児〜学童",
+{id:9,name:"二分脊椎",en:"Spina Bifida",cat:"神経・先天性疾患",age:"乳幼児〜学童",
 overview:"脊髄の先天性奇形による下肢麻痺・排泄障害が主症状。上肢機能は比較的保たれることが多い。OTはADL自立・排泄管理・学校生活・自己管理スキルの獲得を支援する。",
 observations:[
 {name:"ADL自立度（上半身・移動）の評価",priority:"high",
@@ -138,8 +184,14 @@ normal:"手指巧緻性訓練・適切な姿勢設定・スモールステップ
 {name:"感覚障害部位のスキンケア自己管理",priority:"mid",
 why:"感覚麻痺がある部位では褥瘡・外傷に気づきにくい。自己スキンケアと体位変換の習慣化が二次的合併症の予防に不可欠。自己管理スキルは年齢とともに段階的に教える。",
 normal:"皮膚の自己チェック習慣・体圧分散クッション・除圧動作の学習で皮膚トラブルを予防する",warn:"感覚麻痺部位の皮膚トラブル発見遅れ→医師・看護師への報告"},
+],
+refs:[
+"Liptak GS & Dosa NP (2010). Myelomeningocele. Pediatr Rev, 31(11), 443-450.",
+"Law M et al. (1998). Canadian Occupational Performance Measure (COPM), 3rd ed. CAOT Publications.",
+"Barf HA et al. (2003). Concerns of parents with spina bifida. Dev Med Child Neurol, 45(3), 183-186.",
+"日本二分脊椎症協会（編）（2018）『二分脊椎医療ガイドライン』金原出版.",
 ]},
-{id:10,name:"てんかん（発達への影響）",en:"Epilepsy (Developmental Impact)",cat:"神経疾患",age:"乳幼児〜学童",
+{id:10,name:"てんかん（発達への影響）",en:"Epilepsy (Developmental Impact)",cat:"神経・先天性疾患",age:"乳幼児〜学童",
 overview:"てんかん発作自体より、頻回発作・抗てんかん薬の影響・高次脳機能障害の合併が発達・学習・日常生活に影響することがある。OTは発作後の状態評価と日常生活・学校参加の支援を担う。",
 observations:[
 {name:"発作後（ポスタル期）の状態評価",priority:"high",
@@ -151,10 +203,14 @@ normal:"認知機能の定期的な評価・補完戦略（メモ・チェック
 {name:"安全管理と活動参加のバランス",priority:"mid",
 why:"発作への不安から活動制限が過剰になり社会参加・自立が制限されることがある。リスク評価に基づき、安全を確保しつつ最大限の活動参加を支援することがOTの重要な役割。",
 normal:"発作の型・頻度・誘発因子を把握し、制限すべき活動と参加可能な活動を医師・保護者・学校と整理する",warn:""},
+],
+refs:[
+"日本てんかん学会診療ガイドライン委員会（2018）『てんかん診療ガイドライン2018』医学書院.",
+"Hamiwka LD & Wirrell EC (2009). Comorbidities in pediatric epilepsy. Pediatr Neurol, 40(2), 95-99.",
+"Berg AT et al. (2010). Revised terminology and concepts for organization of seizures and epilepsies. Epilepsia, 51(4), 676-685.",
+"大田原俊輔（監修）（2020）『小児のてんかん診療ガイド』診断と治療社.",
 ]},
-
-// ===== 染色体・先天性疾患 =====
-{id:11,name:"ダウン症候群",en:"Down Syndrome (Trisomy 21)",cat:"染色体・先天性疾患",age:"乳幼児〜学童",
+{id:11,name:"ダウン症候群",en:"Down Syndrome (Trisomy 21)",cat:"神経・先天性疾患",age:"乳幼児〜学童",
 overview:"21トリソミーによる染色体疾患。筋緊張低下・発達遅滞・特徴的な顔貌が主症状。OTは筋緊張低下を考慮した姿勢保持・ADL・手指巧緻性・社会参加の支援を行う。",
 observations:[
 {name:"筋緊張低下と姿勢保持の評価",priority:"high",
@@ -166,8 +222,14 @@ normal:"機能的な遊び活動（粘土・ビーズ・パズル等）で手指
 {name:"コミュニケーション・社会参加の支援",priority:"mid",
 why:"言語発達の遅れがあることが多い。AAC（補助代替コミュニケーション）の活用や、絵カード・写真等の視覚支援で表現・理解を補完する。STとの連携が重要。",
 normal:"視覚支援ツール・シンボルコミュニケーション・サインの活用でコミュニケーションを補完し社会参加を促進する",warn:""},
+],
+refs:[
+"Bull MJ & the Committee on Genetics (2011). Health supervision for children with Down syndrome. Pediatrics, 128(2), 393-406.",
+"Lott IT & Dierssen M (2010). Cognitive deficits and associated neurological complications in individuals with Down syndrome. Lancet Neurol, 9(6), 623-633.",
+"日本ダウン症協会（2020）『ダウン症のある子どもたちの発達支援ガイドブック』",
+"七木田敦（編）（2017）『ダウン症候群の作業療法』三輪書店.",
 ]},
-{id:12,name:"22q11.2欠失症候群",en:"22q11.2 Deletion Syndrome",cat:"染色体・先天性疾患",age:"幼児〜学童",
+{id:12,name:"22q11.2欠失症候群",en:"22q11.2 Deletion Syndrome",cat:"神経・先天性疾患",age:"幼児〜学童",
 overview:"22番染色体の微細欠失による多彩な症状（心奇形・口蓋裂・免疫不全・発達遅滞等）を呈する症候群。OTは発達支援・ADL・学習支援・ソーシャルスキルを中心に支援する。",
 observations:[
 {name:"発達評価（認知・運動・ADL）",priority:"high",
@@ -176,6 +238,11 @@ normal:"視覚支援・処理速度の遅さに配慮した課題設定・段階
 {name:"学校生活・学習支援のニーズ評価",priority:"mid",
 why:"算数・書字・注意機能の困難が多く、学校場面で支援が必要なことが多い。学習支援員・合理的配慮の活用を検討し、学校と連携して支援体制を整える。",
 normal:"強みを活かした学習支援・視覚的提示・反復練習・ICT活用で学習参加を支援する",warn:""},
+],
+refs:[
+"Swillen A & McDonald-McGinn D (2015). Developmental trajectories in 22q11.2 deletion syndrome. Am J Med Genet C Semin Med Genet, 169(2), 172-181.",
+"Bearden CE et al. (2001). The neurocognitive phenotype of the 22q11.2 deletion syndrome. Mol Psychiatry, 6(2), 129-140.",
+"日本22q11.2欠失症候群家族会（2019）『22q11.2欠失症候群ガイドブック』",
 ]},
 
 // ===== 感覚統合 =====
@@ -191,6 +258,13 @@ normal:"段階的な前庭感覚入力（揺れ・回転の量と質を調整）
 {name:"固有受容覚の問題（力加減・姿勢保持）",priority:"high",
 why:"固有受容覚の問題は鉛筆を折る・人を強くたたく・姿勢が崩れやすい・疲れやすいなどとして現れる。関節・筋肉からのフィードバックが適切に処理されないため力加減の調整が難しい。",
 normal:"深圧刺激・重い物を運ぶ活動・抵抗のある運動で固有受容覚入力を増やし力加減と姿勢保持を改善する",warn:""},
+],
+refs:[
+"Ayres AJ (1972). Sensory Integration and Learning Disorders. Western Psychological Services.",
+"Ayres AJ (2005). Sensory Integration and the Child: Understanding Hidden Sensory Challenges, 25th anniversary ed. Western Psychological Services.",
+"Parham LD & Mailloux Z (2010). Sensory integration. In: Case-Smith J (ed), Occupational Therapy for Children, 6th ed. Mosby Elsevier.",
+"Miller LJ et al. (2007). Concept evolution in sensory integration. Am J Occup Ther, 61(2), 135-140.",
+"日本感覚統合学会（監修）（2019）『感覚統合Q&A 改訂第2版』協同医書出版社.",
 ]},
 {id:14,name:"前庭感覚障害（バランス不良）",en:"Vestibular Processing Disorder",cat:"感覚統合",age:"幼児〜学童",
 overview:"前庭感覚の処理困難によりバランス・空間認識・目の動き（眼球運動）に影響が出る状態。片足立ち・平均台・自転車などに困難を示す。",
@@ -201,10 +275,15 @@ normal:"感覚統合的アプローチ（揺れ・回転・バランス活動）
 {name:"乗り物酔い・高所への不安",priority:"mid",
 why:"前庭過敏では乗り物酔いが著しく・高所恐怖・エレベーター・階段への強い不安が見られることがある。これらが外出や学校行事への参加を制限することがある。",
 normal:"段階的な脱感作・緩やかな前庭刺激の提供・環境調整（視覚的固定点の活用等）で過敏を軽減する",warn:""},
+],
+refs:[
+"Ayres AJ (1972). Sensory Integration and Learning Disorders. Western Psychological Services.",
+"Rine RM & Wiener-Vacher S (2013). Evaluation and treatment of vestibular dysfunction in children. NeuroRehabilitation, 32(3), 507-518.",
+"日本感覚統合学会（監修）（2019）『感覚統合Q&A 改訂第2版』協同医書出版社.",
 ]},
 
-// ===== 微細運動・手指機能 =====
-{id:15,name:"書字困難（筆圧・文字形成）",en:"Handwriting Difficulties",cat:"微細運動・手指機能",age:"学齢期",
+// ===== 運動・協調 =====
+{id:15,name:"書字困難（筆圧・文字形成）",en:"Handwriting Difficulties",cat:"運動・協調",age:"学齢期",
 overview:"筆圧の調整困難・文字形成の不正確さ・マス目内に文字が収まらないなどの書字困難。視知覚・視覚-運動統合・固有受容覚・微細運動の複合的な問題として現れることが多い。",
 observations:[
 {name:"書字産物（サンプル）の分析",priority:"high",
@@ -216,18 +295,29 @@ normal:"鉛筆グリップ補助具・適切な硬さの鉛筆選択・固有受
 {name:"視知覚・空間認知の評価（TVPS等）",priority:"mid",
 why:"文字の形の認識・マス目の理解・文字と文字のスペーシングには視知覚と空間認知が関与する。視知覚の弱さが書字困難の原因となっている場合、運動練習だけでは改善しない。",
 normal:"視知覚課題（パズル・迷路・点つなぎ等）と書字練習を組み合わせ、視知覚-運動統合を段階的に高める",warn:""},
+],
+refs:[
+"Beery KE & Beery NA (2010). Beery-Buktenica VMI, 6th ed. Pearson.",
+"Feder KP & Majnemer A (2007). Handwriting development, competency, and intervention. Dev Med Child Neurol, 49(4), 312-317.",
+"Denton PL et al. (2006). Handwriting program for third-grade students. Am J Occup Ther, 60(6).",
+"奥村智人・若宮英司（編）（2021）『学習に困難のある子どもへの作業療法的アプローチ』三輪書店.",
 ]},
-{id:16,name:"はさみ操作困難",en:"Scissor Skill Difficulties",cat:"微細運動・手指機能",age:"幼児〜学齢期",
+{id:16,name:"はさみ操作困難",en:"Scissor Skill Difficulties",cat:"運動・協調",age:"幼児〜学齢期",
 overview:"はさみの開閉・両手の協調・目と手の協調に困難を示す状態。幼稚園・保育園・小学校での工作・図工活動への参加を制限する。",
 observations:[
 {name:"はさみ動作の段階的評価",priority:"high",
 why:"はさみ操作は①開閉②直線切り③曲線切り④形の切り抜きと段階があり、どの段階で困難かを特定する。現在のレベルから始め、次の段階へ段階的に進める。",
 normal:"適切な難易度の課題設定・ループはさみ等補助具の活用・動作の分解練習で段階的にスキルアップする",warn:""},
 {name:"両手協調の評価",priority:"high",
-why:"はさみ操作は利き手でのはさみ操作と非利き手での紙回転の両手協調を要する。片方の手が上手く動かせない場合、一方の動作（はさみの開閉か紙の回転か）に集中して練習する。",
+why:"はさみ操作は利き手でのはさみ操作と非利き手での紙回転の両手協調を要する。片方の手が上手く動かせない場合、一方の動作に集中して練習する。",
 normal:"両手協調を高める段階的活動（クランプ・洗濯バサミ→はさみへの移行）と非利き手の紙保持練習を組み合わせる",warn:""},
+],
+refs:[
+"Schneck CM & Battaglia C (1992). Linking sensory processing deficits to functional deficits. Am J Occup Ther, 46(5).",
+"Case-Smith J (1995). The relationships among sensorimotor components, fine motor skill, and functional performance in preschool children. Am J Occup Ther, 49(7).",
+"日本作業療法士協会（2020）『子どもの作業療法 微細運動支援マニュアル』",
 ]},
-{id:17,name:"箸操作困難",en:"Chopstick Use Difficulties",cat:"微細運動・手指機能",age:"幼児〜学齢期",
+{id:17,name:"箸操作困難",en:"Chopstick Use Difficulties",cat:"運動・協調",age:"幼児〜学齢期",
 overview:"箸操作は手指の分離動作・協調・固有受容覚の高度な統合を要する。スプーン→フォーク→箸の段階的習得が基本。学校給食での参加に影響することがある。",
 observations:[
 {name:"スプーン・フォーク使用の評価（前段階）",priority:"high",
@@ -236,8 +326,13 @@ normal:"スプーン→フォーク→トレーニング箸→通常箸の段階
 {name:"手指の分離動作・三指つまみの質",priority:"high",
 why:"箸操作には中指・薬指・小指を曲げたまま人差し指・中指・親指だけを独立させる手指の分離動作が必要。この動作が未成熟な場合、箸練習前に手指分離の基礎練習を行う。",
 normal:"ピンセット・洗濯バサミ・トレーニング箸等の段階的ツールで手指分離動作を練習する",warn:""},
+],
+refs:[
+"Pehoski C (1995). Object manipulation in infants and children. In: Henderson A & Pehoski C (eds), Hand Function in the Child. Mosby.",
+"Case-Smith J & Bigsby R (2000). Posture and fine motor assessment of infants. Am J Occup Ther.",
+"日本作業療法士協会（2020）『子どもの作業療法 微細運動支援マニュアル』",
 ]},
-{id:18,name:"ボタン・ファスナー困難",en:"Dressing Fastener Difficulties",cat:"微細運動・手指機能",age:"幼児〜学齢期",
+{id:18,name:"ボタン・ファスナー困難",en:"Dressing Fastener Difficulties",cat:"運動・協調",age:"幼児〜学齢期",
 overview:"ボタン・ファスナー・スナップ等の衣服の締め具操作が困難な状態。手指巧緻性・協調・視覚-運動統合が関与する。更衣の自立を阻む要因として頻繁に相談される。",
 observations:[
 {name:"各種ファスナー操作の評価",priority:"high",
@@ -246,20 +341,28 @@ normal:"大きなボタン→小さなボタンの段階・ドレッシングボ
 {name:"視覚-運動統合・手の協調の評価",priority:"mid",
 why:"ボタン操作は小さな対象を視覚でとらえながら両手で操作する高度な視覚-運動統合を要する。視知覚や両手協調の問題が根底にある場合は、その問題にもアプローチする。",
 normal:"衣服の操作練習と並行して視知覚・両手協調の基礎活動（ビーズ・粘土・積み木等）を取り入れる",warn:""},
+],
+refs:[
+"Exner CE (2010). Development of hand skills. In: Case-Smith J (ed), Occupational Therapy for Children, 6th ed. Mosby Elsevier.",
+"Shepherd J (2010). Activities of daily living and adaptations for independent living. In: Case-Smith J (ed), Occupational Therapy for Children.",
+"日本作業療法士協会（2018）『ADL支援の手引き―小児編』",
 ]},
-
-// ===== 粗大運動 =====
-{id:19,name:"姿勢保持困難（座位・立位）",en:"Postural Control Difficulties",cat:"粗大運動",age:"幼児〜学童",
+{id:19,name:"姿勢保持困難（座位・立位）",en:"Postural Control Difficulties",cat:"運動・協調",age:"幼児〜学童",
 overview:"重力に抗して姿勢を保つ能力の低下。「姿勢が悪い」「すぐに机に寄りかかる」「床にべたっと座る」などとして観察される。体幹筋力・固有受容覚・前庭感覚の統合が関与する。",
 observations:[
 {name:"座位保持の質・持続時間の評価",priority:"high",
-why:"学習場面での着席姿勢は集中・書字・視覚的注意に直接影響する。体幹の安定性不足が学習困難・疲れやすさの原因になることがある。動的な椅子・足台の使用で改善が見られることがある。",
+why:"学習場面での着席姿勢は集中・書字・視覚的注意に直接影響する。体幹の安定性不足が学習困難・疲れやすさの原因になることがある。",
 normal:"体幹安定化活動（トランポリン・バランスボール等）・適切な椅子と足台の設定・授業中の姿勢休憩で座位保持を支援する",warn:""},
 {name:"体幹筋力・固有受容覚の評価",priority:"high",
 why:"低緊張・固有受容覚処理の弱さが姿勢保持困難の主因になることが多い。感覚統合的アプローチと体幹強化活動を組み合わせてアプローチする。",
 normal:"重力に抗した活動（腹臥位遊び・腹筋・背筋を使う遊び）・固有受容覚入力を多く含む活動で体幹機能を高める",warn:"姿勢保持が著しく困難で側弯疑い→医師・PTへの報告・精査"},
+],
+refs:[
+"Rosenblum S & Josman N (2003). The relationship between postural control and fine manual dexterity. Phys Occup Ther Pediatr, 23(4), 47-60.",
+"Ayres AJ (1972). Sensory Integration and Learning Disorders. Western Psychological Services.",
+"日本作業療法士協会（2020）『姿勢とシーティングの作業療法的アプローチ』",
 ]},
-{id:20,name:"協調運動困難（縄跳び・ボール運動）",en:"Motor Coordination Difficulties",cat:"粗大運動",age:"幼児〜学童",
+{id:20,name:"協調運動困難（縄跳び・ボール運動）",en:"Motor Coordination Difficulties",cat:"運動・協調",age:"幼児〜学童",
 overview:"リズムに合わせた運動・両側協調・目と手の協調を要する活動（縄跳び・ボール操作・鉄棒等）が著しく困難な状態。体育参加・休み時間の遊びに影響し、仲間外れのリスクもある。",
 observations:[
 {name:"両側協調運動の評価",priority:"high",
@@ -268,10 +371,15 @@ normal:"両側協調の段階的練習（左右対称→交互動作→ランダ
 {name:"目と手の協調（ボール操作）の評価",priority:"mid",
 why:"ボールをキャッチする・転がす・蹴るなどの活動は視覚で軌跡を予測しながら身体を動かす目と手の協調を要する。サイズ・速度を調整した段階的練習が有効。",
 normal:"大きくゆっくりのボールから始め・距離・速度・サイズを段階的に調整して目と手の協調を練習する",warn:""},
+],
+refs:[
+"Blank R et al. (2019). European Academy of Childhood Disability guidelines for DCD. Dev Med Child Neurol, 61(3).",
+"Missiuna C et al. (2006). Described as a 'clumsy child': A qualitative study of parents' experiences. Can J Occup Ther, 73(2).",
+"辻井正次・宮原資英（監修）（2019）『発達性協調運動障害（DCD）』金子書房.",
 ]},
 
-// ===== ADL =====
-{id:21,name:"食事動作困難（スプーン・コップ・咀嚼）",en:"Self-Feeding Difficulties",cat:"ADL（日常生活）",age:"乳幼児〜学童",
+// ===== 日常生活（ADL） =====
+{id:21,name:"食事動作困難（スプーン・コップ・咀嚼）",en:"Self-Feeding Difficulties",cat:"日常生活（ADL）",age:"乳幼児〜学童",
 overview:"スプーン・フォーク・コップ操作や咀嚼・飲み込みの困難。運動発達の遅れ・口腔感覚の問題・座位保持困難など複数の要因が関与する。OTは自助具選定・姿勢設定・段階的練習で自力摂取を支援する。",
 observations:[
 {name:"食事動作の観察（姿勢・道具操作・こぼし）",priority:"high",
@@ -280,8 +388,14 @@ normal:"姿勢設定（足底接地・座面高さ調整）・自助具（グリ
 {name:"口腔機能（咀嚼・食感への反応）の評価",priority:"high",
 why:"口腔感覚過敏・咀嚼力の低下・口の開閉協調の問題が偏食・食事拒否に関与することがある。食べられる食形態と拒否の多い食形態を把握し、STと連携して対応する。",
 normal:"口腔感覚の脱感作アプローチ・食形態の段階的調整・食べられる食材の分析と拡大計画でアプローチする",warn:"体重増加不良・著しい偏食で栄養不足→STへの紹介・医師・栄養士との連携"},
+],
+refs:[
+"Shepherd J (2010). Activities of daily living and adaptations for independent living. In: Case-Smith J (ed), Occupational Therapy for Children.",
+"Morris SE & Klein MD (2000). Pre-Feeding Skills, 2nd ed. Therapy Skill Builders.",
+"日本摂食嚥下リハビリテーション学会（2018）『嚥下障害のある子どもへの支援ガイドライン』",
+"日本作業療法士協会（2020）『食事動作支援の手引き―小児編』",
 ]},
-{id:22,name:"更衣困難",en:"Dressing Difficulties",cat:"ADL（日常生活）",age:"幼児〜学童",
+{id:22,name:"更衣困難",en:"Dressing Difficulties",cat:"日常生活（ADL）",age:"幼児〜学童",
 overview:"着脱の順序理解・空間認知・微細運動・感覚の複合的な問題として更衣困難が現れる。朝の準備に時間がかかりすぎることが親子関係のストレスになることもある。",
 observations:[
 {name:"更衣動作の段階的評価（タスク分析）",priority:"high",
@@ -290,8 +404,13 @@ normal:"タスク分析に基づいた段階的練習・視覚的手順表（写
 {name:"衣服への感覚過敏の評価",priority:"mid",
 why:"素材・タグ・縫い目・きつさへの感覚過敏が更衣拒否の原因になることがある。どの素材・どの感触を嫌がるかを特定し、許容できる衣服から練習する。",
 normal:"柔らかい素材・タグなし衣服・ゆとりのあるサイズを選択し、感覚過敏に配慮した衣服選びを保護者に提案する",warn:""},
+],
+refs:[
+"Shepherd J (2010). Activities of daily living. In: Case-Smith J (ed), Occupational Therapy for Children.",
+"Dunn W (2014). Sensory Profile 2. Pearson.",
+"日本作業療法士協会（2018）『ADL支援の手引き―小児編』",
 ]},
-{id:23,name:"排泄自立困難",en:"Toileting Difficulties",cat:"ADL（日常生活）",age:"幼児〜学童",
+{id:23,name:"排泄自立困難",en:"Toileting Difficulties",cat:"日常生活（ADL）",age:"幼児〜学童",
 overview:"おむつからトイレへの移行・手順理解・衣服の着脱・後始末の自立が遅れる状態。感覚の問題・認知的理解の遅れ・運動機能の困難が複合することがある。",
 observations:[
 {name:"排泄自立の段階評価",priority:"high",
@@ -300,23 +419,34 @@ normal:"現在のレベルから次のステップへのスモールステップ
 {name:"衣服の着脱（トイレ場面での）の評価",priority:"mid",
 why:"急いでいる場面での衣服の着脱が困難で間に合わないことが多い。ボタン・ベルト・ファスナーを素早く外す練習と、簡単に着脱できる衣服への変更を検討する。",
 normal:"マジックテープ・ゴム式パンツなど着脱しやすい衣服の選択・着脱練習で間に合う確率を高める",warn:""},
+],
+refs:[
+"Shepherd J (2010). Activities of daily living. In: Case-Smith J (ed), Occupational Therapy for Children.",
+"Gray M et al. (2011). Toilet training children with disabilities. In: Case-Smith J & O'Brien JC (eds), Occupational Therapy for Children.",
+"厚生労働省（2018）『障害のある子どもの日常生活自立支援プログラム』",
 ]},
 
-// ===== 学校生活支援 =====
-{id:24,name:"着席保持・集中困難（学習場面）",en:"In-seat Behavior & Attention Difficulties",cat:"学校生活支援",age:"幼児〜学童",
+// ===== 学校・社会参加 =====
+{id:24,name:"着席保持・集中困難（学習場面）",en:"In-seat Behavior & Attention Difficulties",cat:"学校・社会参加",age:"幼児〜学童",
 overview:"授業中に座っていられない・集中が続かない・離席が多いなどの困難。ADHDやSPD・姿勢保持困難が背景にあることが多い。OTは感覚・姿勢・環境の視点からアプローチする。",
 observations:[
 {name:"着席困難の要因分析（感覚vs姿勢vs注意）",priority:"high",
 why:"離席・体動の多さは感覚探求（動きたい）・姿勢保持困難（座れない）・注意持続困難（集中できない）の3つが原因として考えられ、それぞれアプローチが異なる。観察・評価で主要因を特定する。",
 normal:"感覚ダイエット（授業前の感覚入力）・動的シーティング（バランスクッション）・課題の短分割で着席維持を支援する",warn:""},
 {name:"授業前の感覚調整（センサリーダイエット）",priority:"high",
-why:"授業前に固有受容覚・前庭感覚を適度に満たすことで、授業中の覚醒レベルを最適化できることがある（スキマ感覚活動）。学校での実施可能な感覚活動を提案する。",
+why:"授業前に固有受容覚・前庭感覚を適度に満たすことで、授業中の覚醒レベルを最適化できることがある。学校での実施可能な感覚活動を提案する。",
 normal:"廊下での荷物運搬・壁プッシュ・お手玉・スクィーズボールなど授業中に使える感覚ツールを学校と検討する",warn:""},
 {name:"板書・ノート作成への支援",priority:"mid",
-why:"黒板の文字を見てノートに書き写すには視覚記憶・視知覚・書字スキルが複合的に必要。どのプロセスが困難かを特定し（見えていない・覚えられない・書けない）、それぞれに対応する。",
+why:"黒板の文字を見てノートに書き写すには視覚記憶・視知覚・書字スキルが複合的に必要。どのプロセスが困難かを特定し、それぞれに対応する。",
 normal:"拡大写真・記入フォーム・ICT活用（タブレット撮影等）・補助線ノートなど合理的配慮を学校と連携して整備する",warn:"板書が全くできず授業についていけない→合理的配慮の申請・担任との緊急連携"},
+],
+refs:[
+"Pfeiffer B et al. (2008). Effectiveness of sensory integration interventions in children with ADHD. Am J Occup Ther, 62(3).",
+"Gioia GA et al. (2000). BRIEF: Behavior Rating Inventory of Executive Function. Psychological Assessment Resources.",
+"文部科学省（2021）『障害のある子供の教育支援の手引』",
+"日本作業療法士協会（2020）『学校作業療法実践ガイド』",
 ]},
-{id:25,name:"体育活動困難（縄跳び・鉄棒・マット）",en:"Physical Education Participation Difficulties",cat:"学校生活支援",age:"学童",
+{id:25,name:"体育活動困難（縄跳び・鉄棒・マット）",en:"Physical Education Participation Difficulties",cat:"学校・社会参加",age:"学童",
 overview:"体育の授業における縄跳び・鉄棒・マット運動・ボール運動等への参加困難。運動の失敗経験が「体育嫌い」「運動嫌い」につながり、長期的な活動参加の低下を招くことがある。",
 observations:[
 {name:"体育授業での参加状況の把握",priority:"high",
@@ -325,10 +455,13 @@ normal:"困難な種目の段階的な目標設定・本人が「できた」を
 {name:"失敗体験の影響（自己効力感）の評価",priority:"mid",
 why:"DCDの子どもは運動の失敗体験が積み重なり自己効力感・自尊心が低下しやすい。「どうせできない」という諦めが練習意欲を失わせる。成功体験を積ませることがOT介入の重要な要素。",
 normal:"必ず成功できる難易度設定・できたことの言語化・得意な活動での達成感を積み重ねて自己効力感を回復する",warn:""},
+],
+refs:[
+"Missiuna C et al. (2006). A 'clumsy child': A qualitative study of parents' experiences. Can J Occup Ther, 73(2).",
+"Poulsen AA & Ziviani JM (2004). Can I play too? Physical activity engagement of children with DCD. Can J Occup Ther, 71(2).",
+"日本作業療法士協会（2020）『学校作業療法実践ガイド』",
 ]},
-
-// ===== 社会性・コミュニケーション =====
-{id:26,name:"対人関係困難・友達関係",en:"Social Interaction Difficulties",cat:"社会性・コミュニケーション",age:"幼児〜学童",
+{id:26,name:"対人関係困難・友達関係",en:"Social Interaction Difficulties",cat:"学校・社会参加",age:"幼児〜学童",
 overview:"アイコンタクト・共同注意・会話の往来・集団遊びへの参加が困難な状態。ASDや発達的な遅れを背景とすることが多い。OTは遊び場面・グループ活動を通じて社会性の発達を支援する。",
 observations:[
 {name:"遊び場面での社会性の観察",priority:"high",
@@ -337,10 +470,14 @@ normal:"発達段階に応じた社会的遊びへの参加（一人→並行→
 {name:"ソーシャルスキルトレーニング（SST）のニーズ評価",priority:"high",
 why:"あいさつ・依頼・断り方・感情表現・トラブル解決等の具体的なソーシャルスキルの獲得が必要なことが多い。スキルの欠如（知らない）か、パフォーマンスの困難（知っているが使えない）かを評価する。",
 normal:"具体的な場面設定でのSST・ロールプレイ・実際の場面での般化練習で社会スキルの習得と般化を支援する",warn:""},
+],
+refs:[
+"Bundy AC et al. (2001). Sensory Integration: Theory and Practice, 2nd ed. FA Davis.",
+"Koegel RL & Koegel LK (2006). Pivotal Response Treatments for Autism. Paul H Brookes.",
+"日本作業療法士協会（2020）『社会参加支援の手引き―小児編』",
+"大隈紘子（監修）（2018）『ソーシャルスキルトレーニングガイドブック』中央法規出版.",
 ]},
-
-// ===== 認知機能 =====
-{id:27,name:"実行機能障害（計画・段取り）",en:"Executive Function Difficulties",cat:"認知機能",age:"学童",
+{id:27,name:"実行機能障害（計画・段取り）",en:"Executive Function Difficulties",cat:"学校・社会参加",age:"学童",
 overview:"計画立案・優先順位づけ・開始・柔軟な切り替え・モニタリング等の実行機能の弱さ。ADHD・ASD・TBI等で多く見られ、宿題・持ち物管理・集団活動参加に影響する。",
 observations:[
 {name:"実行機能の評価（BRIEF等）",priority:"high",
@@ -349,8 +486,14 @@ normal:"外部ツール（視覚的スケジュール・チェックリスト・
 {name:"宿題・家庭課題の遂行支援",priority:"high",
 why:"宿題の開始困難・途中で気が散る・計画的に進められない・提出を忘れるなどの具体的な困難は実行機能の弱さが主因。保護者とともに家庭での支援体制を構築する。",
 normal:"宿題の開始時間の固定化・優先順位リスト・タイマー活用・報酬システム・保護者コーチングで宿題遂行を支援する",warn:""},
+],
+refs:[
+"Gioia GA et al. (2000). BRIEF: Behavior Rating Inventory of Executive Function. Psychological Assessment Resources.",
+"Barkley RA (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. Guilford Press.",
+"Anderson PJ (2008). Towards a developmental model of executive function. In: Anderson V et al. (eds), Executive Functions and the Frontal Lobes. Taylor & Francis.",
+"日本作業療法士協会（2020）『発達障害のある人の作業療法支援』",
 ]},
-{id:28,name:"ワーキングメモリの弱さ",en:"Working Memory Difficulties",cat:"認知機能",age:"学童",
+{id:28,name:"ワーキングメモリの弱さ",en:"Working Memory Difficulties",cat:"学校・社会参加",age:"学童",
 overview:"短期的な情報保持・操作が困難な状態。複数の指示を覚えられない・計算中に数を忘れる・板書を見て写せないなどとして現れる。ADHDや学習障害で多く見られる。",
 observations:[
 {name:"ワーキングメモリへの影響評価",priority:"high",
@@ -359,10 +502,15 @@ normal:"複数指示の視覚化・一度に一つの指示・メモ帳活用・
 {name:"補完戦略の指導・定着支援",priority:"mid",
 why:"メモを取る・チェックリストを活用するなどの補完戦略を学ぶことで、ワーキングメモリの弱さを補うことができる。戦略の習得には繰り返し練習と日常場面での般化が必要。",
 normal:"本人に合った補完ツール（ホワイトボード・メモ帳・スマートフォン等）を選定し、使い方を練習・習慣化まで支援する",warn:""},
+],
+refs:[
+"Gathercole SE & Alloway TP (2008). Working Memory and Learning: A Practical Guide for Teachers. SAGE Publications.",
+"Swanson HL (1999). What develops in working memory? Developmental Psychology, 35(4), 986-1000.",
+"日本LD学会（編）（2017）『LD・ADHD等関連用語集 第4版』日本文化科学社.",
 ]},
 
-// ===== 心理・行動面 =====
-{id:29,name:"癇癪・パニック・感情コントロール",en:"Emotional Dysregulation / Meltdowns",cat:"心理・行動面",age:"幼児〜学童",
+// ===== 心理・行動 =====
+{id:29,name:"癇癪・パニック・感情コントロール",en:"Emotional Dysregulation / Meltdowns",cat:"心理・行動",age:"幼児〜学童",
 overview:"感情の調整困難による激しい癇癪・パニック・感情爆発。感覚過敏・感覚処理の困難・実行機能の弱さが背景にあることが多い。OTは感覚的要因の分析と対処戦略の支援を担う。",
 observations:[
 {name:"癇癪・パニックのトリガー分析",priority:"high",
@@ -374,16 +522,28 @@ normal:"クールダウンスペースの設定・感覚ツール（スクィー
 {name:"感情の認識・表現スキルの評価",priority:"mid",
 why:"感情を言語化・表現できないために行動で表現してしまうことがある。「怒り」「悲しみ」「不安」等の感情の認識と適切な表現方法の習得がパニック軽減につながる。",
 normal:"感情カード・感情温度計・気持ちの絵カードを使って感情の認識と表現を練習する",warn:""},
+],
+refs:[
+"Bundy AC et al. (2001). Sensory Integration: Theory and Practice. FA Davis.",
+"Greenspan SI & Wieder S (2006). Engaging Autism. Da Capo Lifelong Books.",
+"日本作業療法士協会（2020）『発達障害のある人の作業療法支援』",
+"奥田健次（2012）『発達障害の子への応用行動分析（ABA）入門』中央法規出版.",
 ]},
-{id:30,name:"不登校・学校不安",en:"School Refusal / School Anxiety",cat:"心理・行動面",age:"学童",
+{id:30,name:"不登校・学校不安",en:"School Refusal / School Anxiety",cat:"心理・行動",age:"学童",
 overview:"登校しぶり・学校不安・不登校はOTの直接対象ではないが、感覚過敏・協調運動困難・社会性の困難・自己効力感の低下が背景にある場合にOTが貢献できる。",
 observations:[
 {name:"学校不適応の作業療法的要因の評価",priority:"high",
 why:"不登校の背景に感覚過敏（制服・給食・体育等）・書字困難・運動の失敗体験・ADL困難（給食の準備等）・人間関係の困難がある場合、OTが解決できる要因を特定することが重要。",
 normal:"OTが対応できる要因（感覚・運動・ADL）を特定し、具体的な対応策（環境調整・合理的配慮等）を学校・心理士・保護者と共有する",warn:"自傷・希死念慮を伴う→医師・心理士への緊急連携"},
 {name:"活動参加の段階的回復支援",priority:"mid",
-why:"学校への完全復帰だけでなく、放課後の活動・フリースクール・療育での活動参加から始め、徐々に社会参加の幅を広げる段階的アプローチが有効。作業機能（しごと・遊び・自己管理）の回復を目標とする。",
+why:"学校への完全復帰だけでなく、放課後の活動・フリースクール・療育での活動参加から始め、徐々に社会参加の幅を広げる段階的アプローチが有効。作業機能の回復を目標とする。",
 normal:"本人の興味・強みを活かした活動から始め、成功体験を積み重ねながら参加の場を段階的に広げる",warn:""},
+],
+refs:[
+"文部科学省（2023）『令和4年度児童生徒の問題行動・不登校等生徒指導上の諸課題に関する調査結果』",
+"Law M et al. (1998). COPM, 3rd ed. CAOT Publications.",
+"日本作業療法士協会（2022）『不登校・ひきこもりのある人への作業療法的アプローチ』",
+"奥田健次（2012）『発達障害の子への応用行動分析（ABA）入門』中央法規出版.",
 ]},
 
 // ===== よくある相談 =====
@@ -395,7 +555,12 @@ why:"感覚探求（動き・回転・重い感触を求める）が多動の主
 normal:"感覚ダイエットの導入（授業前・帰宅後の感覚活動）・重い物を持つ活動・深圧刺激（タオル体操等）で感覚ニーズを満たす",warn:""},
 {name:"環境調整による多動の軽減",priority:"high",
 why:"刺激の多い環境（視覚的雑然・騒音等）が覚醒亢進を引き起こし多動が増加することがある。座席の位置・壁の装飾・音環境の調整が有効。",
-normal:"刺激の少ない席配置・視覚的刺激の整理・聴覚刺激の軽減（必要なら）・動いてもよい時間の確保で多動を軽減する",warn:"多動が著しく危険行動が频繁→医師への紹介（ADHD診断・薬物療法の検討）"},
+normal:"刺激の少ない席配置・視覚的刺激の整理・聴覚刺激の軽減・動いてもよい時間の確保で多動を軽減する",warn:"多動が著しく危険行動が频繁→医師への紹介（ADHD診断・薬物療法の検討）"},
+],
+refs:[
+"Dunn W (2014). Sensory Profile 2. Pearson.",
+"Barkley RA (2015). Attention-Deficit Hyperactivity Disorder, 4th ed. Guilford Press.",
+"日本作業療法士協会（2020）『発達障害のある人の作業療法支援』",
 ]},
 {id:32,name:"不器用さの全般的支援",en:"General Clumsiness",cat:"よくある相談",age:"幼児〜学童",
 overview:"「全体的に不器用」という主訴で相談されることが多い。DCD・感覚統合障害・ASDの合併など様々な背景が考えられる。OTは評価で背景を特定し、個別の支援計画を立案する。",
@@ -405,7 +570,13 @@ why:"MABC-2・VMI・感覚プロファイル等の標準化評価で、不器用
 normal:"評価結果に基づく個別支援計画の立案・保護者・学校への評価結果のフィードバックで理解と支援を広げる",warn:""},
 {name:"本人の意欲・自己効力感の評価",priority:"mid",
 why:"不器用さによる失敗体験の蓄積は「どうせできない」という無力感につながる。本人の「やりたい」「困っている」ことを中心に支援することで動機を高め、介入効果を最大化する。",
-normal:"COPM（カナダ作業遂行評価）等で本人が優先する活動を特定し、本人中心の目標設定で意欲を引き出す",warn:""},
+normal:"COPM等で本人が優先する活動を特定し、本人中心の目標設定で意欲を引き出す",warn:""},
+],
+refs:[
+"Henderson SE, Sugden DA & Barnett AL (2007). MABC-2. Pearson.",
+"Law M et al. (1998). COPM, 3rd ed. CAOT Publications.",
+"Polatajko HJ & Mandich A (2004). CO-OP Approach. CAOT.",
+"辻井正次・宮原資英（監修）（2019）『発達性協調運動障害（DCD）』金子書房.",
 ]},
 {id:33,name:"姿勢が悪い",en:"Poor Posture",cat:"よくある相談",age:"幼児〜学童",
 overview:"「姿勢が悪い」「すぐ崩れる」という訴えは体幹筋力・固有受容覚・前庭感覚・視力等が関与することがある。また感覚探求として揺れることもある。OTは原因を評価し環境・活動両面からアプローチする。",
@@ -414,8 +585,13 @@ observations:[
 why:"「姿勢が悪い」の原因として①体幹筋力不足②固有受容覚・前庭感覚処理③感覚探求（揺れている）④視力の問題⑤環境（椅子のサイズ不適合）等がある。観察と評価で主要因を特定する。",
 normal:"原因に応じた対応（体幹強化・感覚統合・椅子高さ調整・視力検査の勧め等）で根本的な改善をはかる",warn:"脊椎の形態異常疑い（側弯・前弯の進行）→医師への報告"},
 {name:"学校環境の調整評価",priority:"mid",
-why:"学校の椅子と机の高さが体に合っていないだけで姿勢崩れが起きることがある。足底が床につく高さ・肘が机に届く高さが基本。まず環境評価から始めることで、早期改善が見込めることがある。",
+why:"学校の椅子と机の高さが体に合っていないだけで姿勢崩れが起きることがある。足底が床につく高さ・肘が机に届く高さが基本。まず環境評価から始めることで早期改善が見込めることがある。",
 normal:"椅子の高さ・机の高さの調整・足台の設置・動的シーティングクッションの導入で姿勢環境を整える",warn:""},
+],
+refs:[
+"Rosenblum S & Josman N (2003). Relationship between postural control and fine manual dexterity. Phys Occup Ther Pediatr, 23(4).",
+"Ayres AJ (2005). Sensory Integration and the Child. Western Psychological Services.",
+"日本作業療法士協会（2020）『姿勢とシーティングの作業療法的アプローチ』",
 ]},
 {id:34,name:"自信がない・自己肯定感が低い",en:"Low Self-Esteem / Low Self-Efficacy",cat:"よくある相談",age:"幼児〜学童",
 overview:"発達障害・DCDなどの子どもは失敗体験の蓄積により自己肯定感が低下しやすい。OTはできることを増やし、成功体験を積み重ねることで自己効力感の回復を支援する。",
@@ -426,6 +602,12 @@ normal:"本人の興味・得意なことを活かした課題設定・かなら
 {name:"活動参加と自己肯定感の循環の支援",priority:"high",
 why:"活動参加の成功→自信がつく→新たな挑戦という好循環を作ることがOT支援の目標。本人が「やってみたい」と感じる活動を中心に、参加の質と量を徐々に広げる。",
 normal:"COPM等で本人の目標を中心に置いた支援・定期的な達成の評価と共有・小さな進歩の可視化で動機を維持する",warn:""},
+],
+refs:[
+"Law M et al. (1998). COPM, 3rd ed. CAOT Publications.",
+"Bandura A (1997). Self-Efficacy: The Exercise of Control. Freeman.",
+"Missiuna C et al. (2006). A 'clumsy child'. Can J Occup Ther, 73(2).",
+"日本作業療法士協会（2020）『作業療法における目標設定と評価ガイド』",
 ]},
 {id:35,name:"偏食",en:"Food Selectivity / Picky Eating",cat:"よくある相談",age:"幼児〜学童",
 overview:"特定の食感・色・温度・匂いへの強い拒否反応により食べられる食品が著しく制限される状態。口腔感覚過敏・感覚統合障害・ASDに多く見られる。OTはSTと連携して感覚的要因にアプローチする。",
@@ -436,6 +618,12 @@ normal:"食べられる食材を分析し、共通する食感・形状から近
 {name:"口腔感覚脱感作アプローチ",priority:"high",
 why:"口腔内の触覚過敏（口の中に物が入ることへの強い抵抗）が偏食の根本原因の場合、脱感作アプローチが有効。顔・口周り・口腔内への段階的な触覚刺激慣らしが前提となる。",
 normal:"顔・口周りへの触覚慣らし→歯ブラシによる口腔内刺激→食感の段階的拡大というプログラムでアプローチする",warn:""},
+],
+refs:[
+"Dunn W (2014). Sensory Profile 2. Pearson.",
+"Morris SE & Klein MD (2000). Pre-Feeding Skills, 2nd ed. Therapy Skill Builders.",
+"Cermak SA et al. (2010). Food selectivity and sensory sensitivity in children with autism spectrum disorders. J Am Diet Assoc, 110(2), 238-246.",
+"日本摂食嚥下リハビリテーション学会（2018）『嚥下障害のある子どもへの支援ガイドライン』",
 ]},
 {id:36,name:"学校に行きたがらない（OT視点）",en:"School Refusal (OT Perspective)",cat:"よくある相談",age:"学童",
 overview:"学校不安・登校しぶりの背景にOTが関与できる要因（感覚・運動・ADL困難）が隠れていることがある。「なぜ学校が嫌か」の作業療法的アセスメントが支援の出発点となる。",
@@ -446,44 +634,33 @@ normal:"特定した困難場面に対する具体的対応策（合理的配慮
 {name:"本人の「やりたい」「得意」の確認",priority:"mid",
 why:"学校不安がある子どもでも、放課後活動・療育・習い事など別の場での成功体験が自信回復のきっかけになることがある。OTは本人の強みと興味を活かせる場を見つけることも支援の一部。",
 normal:"学校以外の活動参加（療育・習い事・地域活動）での成功体験を積み重ね、社会参加の基盤を維持・拡大する",warn:""},
+],
+refs:[
+"文部科学省（2023）『令和4年度児童生徒の問題行動・不登校等生徒指導上の諸課題に関する調査結果』",
+"Law M et al. (1998). COPM, 3rd ed. CAOT Publications.",
+"日本作業療法士協会（2022）『不登校・ひきこもりのある人への作業療法的アプローチ』",
 ]},
 ];
 
 const otCategories = [
   "すべて",
-  "発達障害（ASD）",
-  "発達障害（ADHD）",
-  "発達性協調運動症（DCD）",
-  "学習障害（LD）",
-  "知的発達症",
-  "神経疾患",
-  "染色体・先天性疾患",
+  "発達障害",
+  "神経・先天性疾患",
   "感覚統合",
-  "微細運動・手指機能",
-  "粗大運動",
-  "ADL（日常生活）",
-  "学校生活支援",
-  "社会性・コミュニケーション",
-  "認知機能",
-  "心理・行動面",
+  "運動・協調",
+  "日常生活（ADL）",
+  "学校・社会参加",
+  "心理・行動",
   "よくある相談",
 ];
 
 const otCatColors = {
-  "発達障害（ASD）":"#2f9e44",
-  "発達障害（ADHD）":"#1971c2",
-  "発達性協調運動症（DCD）":"#e67700",
-  "学習障害（LD）":"#c2255c",
-  "知的発達症":"#6741d9",
-  "神経疾患":"#862e9c",
-  "染色体・先天性疾患":"#0c8599",
+  "発達障害":"#2f9e44",
+  "神経・先天性疾患":"#862e9c",
   "感覚統合":"#d9480f",
-  "微細運動・手指機能":"#5c7cfa",
-  "粗大運動":"#0ca678",
-  "ADL（日常生活）":"#f08c00",
-  "学校生活支援":"#1971c2",
-  "社会性・コミュニケーション":"#c92a2a",
-  "認知機能":"#5c7cfa",
-  "心理・行動面":"#862e9c",
-  "よくある相談":"#2f9e44",
+  "運動・協調":"#1971c2",
+  "日常生活（ADL）":"#f08c00",
+  "学校・社会参加":"#0c8599",
+  "心理・行動":"#c92a2a",
+  "よくある相談":"#5c7cfa",
 };

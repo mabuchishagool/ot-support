@@ -216,6 +216,8 @@
   .ref-static strong{display:block;width:100%;margin-bottom:6px;font-size:11px;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:0.05em;}
   .ref-static a{color:var(--green);text-decoration:none;padding:3px 8px;background:var(--bg-card);border:1px solid var(--border);border-radius:99px;font-size:12px;transition:background 0.12s;}
   .ref-static a:hover{background:var(--green-light);}
+  .ref-citations{margin:8px 0 0 0;padding:14px 18px 14px 34px;background:var(--bg-secondary);border-radius:var(--radius-md);font-size:12px;color:var(--text-secondary);line-height:1.8;list-style:decimal;}
+  .ref-citations li{margin-bottom:2px;}
 
   /* Cheer popup */
   .cheer-overlay{
@@ -364,6 +366,7 @@
     </div>
 
     <div class="auth-error" id="authError"></div>
+    <div style="margin-top:24px;font-size:11px;color:var(--text-tertiary);text-align:center;letter-spacing:0.05em;">© 2026 Kanta Mabuchi</div>
   </div>
 </div>
 
@@ -371,7 +374,7 @@
 <div class="cheer-overlay" id="cheerOverlay" onclick="closeCheer()">
   <div class="cheer-card">
     <div class="cheer-line"></div>
-    <div class="cheer-msg">子どもの<em>「できた」</em>が、<br>あなたの喜びでもある。<br><br><span style="font-size:12px;font-weight:400;color:var(--text-tertiary)">※毎日の支援の積み重ねが、<br>子どもの未来を確かに変えています。<br>今日も一緒にがんばりましょう。</span></div>
+    <div class="cheer-msg">すべての始まりは、<br><em>まずはあなたの健康</em>です。<br><br><span style="font-size:12px;font-weight:400;color:var(--text-tertiary)">※作者は、学びながら子どもたちを<br>支える専門家の皆さんを応援しています。</span></div>
     <div class="cheer-sub">— tap to close —</div>
   </div>
 </div>
@@ -713,7 +716,10 @@ async function shareItem(d){
 // ====== REFS ======
 function buildRefs(d){
   const q=encodeURIComponent(d.name),qEn=encodeURIComponent(d.en+' occupational therapy'),qOT=encodeURIComponent(d.name+' 作業療法 支援 アプローチ'),qGuideline=encodeURIComponent(d.name+' 支援 ガイドライン 発達'),qCase=encodeURIComponent(d.name+' 作業療法 事例 小児');
-  return `<div class="ref-section"><div class="obs-section-header">参考・関連検索</div><div class="ref-grid"><a class="ref-link" href="https://www.google.com/search?q=${qOT}" target="_blank" rel="noopener"><i class="ti ti-brand-google"></i><div class="ref-label">Google検索<span>OT支援・アプローチ</span></div></a><a class="ref-link" href="https://www.google.com/search?q=${qGuideline}" target="_blank" rel="noopener"><i class="ti ti-book"></i><div class="ref-label">支援ガイドライン<span>発達支援・療育</span></div></a><a class="ref-link" href="https://www.google.com/search?q=${qCase}" target="_blank" rel="noopener"><i class="ti ti-stethoscope"></i><div class="ref-label">OT事例検索<span>小児OT事例</span></div></a><a class="ref-link" href="https://pubmed.ncbi.nlm.nih.gov/?term=${qEn}" target="_blank" rel="noopener"><i class="ti ti-microscope"></i><div class="ref-label">PubMed<span>${d.en}</span></div></a></div><div class="ref-static"><strong>信頼性の高い医療・支援情報</strong><a href="https://www.jaot.or.jp/" target="_blank" rel="noopener">日本作業療法士協会</a><a href="https://www.japansid.or.jp/" target="_blank" rel="noopener">日本感覚統合学会</a><a href="https://www.rehab.go.jp/" target="_blank" rel="noopener">国立障害者リハビリセンター</a><a href="https://www.ncnp.go.jp/" target="_blank" rel="noopener">国立精神・神経医療研究センター</a><a href="https://www.mhlw.go.jp/" target="_blank" rel="noopener">厚生労働省</a></div></div>`;
+  const citationHtml = d.refs && d.refs.length
+    ? `<div class="obs-section-header" style="margin-top:28px;">このページで使った情報ソース（出典・参考文献）</div><ol class="ref-citations">${d.refs.map(r=>`<li>${r}</li>`).join('')}</ol>`
+    : '';
+  return `<div class="ref-section">${citationHtml}<div class="obs-section-header" style="margin-top:${d.refs&&d.refs.length?'20':'0'}px;">参考・関連検索</div><div class="ref-grid"><a class="ref-link" href="https://www.google.com/search?q=${qOT}" target="_blank" rel="noopener"><i class="ti ti-brand-google"></i><div class="ref-label">Google検索<span>OT支援・アプローチ</span></div></a><a class="ref-link" href="https://www.google.com/search?q=${qGuideline}" target="_blank" rel="noopener"><i class="ti ti-book"></i><div class="ref-label">支援ガイドライン<span>発達支援・療育</span></div></a><a class="ref-link" href="https://www.google.com/search?q=${qCase}" target="_blank" rel="noopener"><i class="ti ti-stethoscope"></i><div class="ref-label">OT事例検索<span>小児OT事例</span></div></a><a class="ref-link" href="https://pubmed.ncbi.nlm.nih.gov/?term=${qEn}" target="_blank" rel="noopener"><i class="ti ti-microscope"></i><div class="ref-label">PubMed<span>${d.en}</span></div></a></div><div class="ref-static"><strong>信頼性の高い医療・支援情報</strong><a href="https://www.jaot.or.jp/" target="_blank" rel="noopener">日本作業療法士協会</a><a href="https://www.japansid.or.jp/" target="_blank" rel="noopener">日本感覚統合学会</a><a href="https://www.rehab.go.jp/" target="_blank" rel="noopener">国立障害者リハビリセンター</a><a href="https://www.ncnp.go.jp/" target="_blank" rel="noopener">国立精神・神経医療研究センター</a><a href="https://www.mhlw.go.jp/" target="_blank" rel="noopener">厚生労働省</a></div></div>`;
 }
 
 // ====== RENDER DETAIL ======
