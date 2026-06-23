@@ -1,0 +1,16 @@
+{
+  "name": "小児作業療法支援ガイド",
+  "short_name": "小児OT支援",
+  "description": "小児作業療法士のための発達支援ガイドアプリ",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f0fbf2",
+  "theme_color": "#2f9e44",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
